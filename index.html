@@ -20,6 +20,31 @@
         td {
             padding: 7px;
         }
+        input {
+            height: 25px;
+            border-radius: 10px;
+            border: none;
+        }
+        textarea {
+            border-radius: 10px;
+            border: none;
+        }
+        input:focus ,textarea:focus {
+            outline: none;
+            border: 1px solid forestgreen;
+        }
+        .button {
+            background-color: forestgreen;
+            color: #fff;
+            font-size: 18px;
+            padding: 0px 25px;
+            border: none;
+            margin-bottom: 30px;
+        }
+        .button:hover {
+            cursor: pointer;
+            box-shadow: 5px 5px 5px red;
+        }
     </style>
 </head>
 <body>
@@ -222,6 +247,49 @@
             </table>
 
         </div>
+        
+        <!--Other Details-->
+        <div id="other-details">
+            <h2>Other Details</h2>
+            <table style="width: 100%;">
+                <tr>
+                    <td>Job Type</td>
+                    <td><input type="radio" name="job-type" value="permanent">Permanent</td>
+                    <td><input type="radio" name="job-type" value="contract">Contract</td>
+                    <td><input type="radio" name="job-type" value="other">Other</td>
+                </tr>
+
+                <tr>
+                    <td>Dte of Joining</td>
+                    <td><input type="date" size="25"></td>
+                    <td>Time Joining</td>
+                    <td><input type="time" size="25"></td>
+                </tr>
+                <tr>
+                    <td>Preferred Job LOcation</td>
+                    <td><input type="radio" value="hyderabad" name="joblocation">Hyderabad</td>
+                    <td><input type="radio" value="Bangalore" name="joblocation"> Bangalore</td>
+                    <td><input type="radio" value="other" name="joblocation"> Other</td>
+                </tr>
+                <tr>
+                    <td>Willing to relocate to Hyderabad ?</td>
+                    <td><input type="radio" value="yes" name="relocate">Yes</td>
+                    <td><input type="radio" value="no" name="relocate">No</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td colspan="3">All the above mentioned information is true as per my knowledge</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td ><input type="submit" value="Submit" class="button"></td>
+                    <td ><input type="reset" value="Reset" class="button"></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+       
        
     </form>
 
